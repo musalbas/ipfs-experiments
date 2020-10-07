@@ -13,4 +13,4 @@ def receive_hash(ipfs_hash):
     ipfs.cat(ipfs_hash)
     return str(current_milli_time())
 
-app.run()
+app.run(host='0.0.0.0')
